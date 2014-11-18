@@ -8,4 +8,6 @@ A full description of the code is contained in the code comments.
 To view the the "final.txt" file in R, type the following:
 
 final_file <- read.table("final.txt", header = TRUE)
+
+
 View(final_file)
