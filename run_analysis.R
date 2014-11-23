@@ -67,7 +67,7 @@ for (i in index){
   # replaces any instances of the abbreviation "Gyro" with the word "Gyroscope",
   # etc.
   
-  colnames(train)[i] <- gsub("Acc", "Accelerate", colnames(train)[i])
+  colnames(train)[i] <- gsub("Acc", "Accelerometer", colnames(train)[i])
   colnames(train)[i] <- gsub("Mag", "Magnitude", colnames(train)[i])
 }
 # Melting is then performed, yielding a tidy data set.
