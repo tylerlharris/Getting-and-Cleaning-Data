@@ -84,7 +84,7 @@ grouped <- group_by(melted, Subject, Activity, variable)
 # yielding the final tidy data set.
 
 final <- summarise(grouped, means = mean(value))
-
+names(final)[3] <- "Measurement Type" # Changes the column name.
 
 # Write the text file.
 
